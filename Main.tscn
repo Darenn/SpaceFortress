@@ -1,0 +1,451 @@
+[gd_scene load_steps=15 format=2]
+
+[ext_resource path="res://Main.gd" type="Script" id=1]
+[ext_resource path="res://Spawner.gd" type="Script" id=2]
+[ext_resource path="res://star1.png" type="Texture" id=3]
+[ext_resource path="res://star2.png" type="Texture" id=4]
+[ext_resource path="res://Player.tscn" type="PackedScene" id=5]
+[ext_resource path="res://MotherShip.gd" type="Script" id=6]
+[ext_resource path="res://Fortress.png" type="Texture" id=7]
+[ext_resource path="res://Shooter.gd" type="Script" id=8]
+[ext_resource path="res://Explosion1.png" type="Texture" id=9]
+[ext_resource path="res://Minecraft.ttf" type="DynamicFontData" id=10]
+[ext_resource path="res://civil.png" type="Texture" id=11]
+[ext_resource path="res://Arrow.png" type="Texture" id=12]
+[ext_resource path="res://icon-power.png" type="Texture" id=13]
+
+[sub_resource type="DynamicFont" id=1]
+font_data = ExtResource( 10 )
+
+[node name="Main" type="TextureRect"]
+script = ExtResource( 1 )
+
+[node name="Spawner" type="Node2D" parent="."]
+editor/display_folded = true
+script = ExtResource( 2 )
+
+[node name="Tween" type="Tween" parent="Spawner"]
+
+[node name="Stars" type="Node" parent="."]
+editor/display_folded = true
+
+[node name="star" type="Sprite" parent="Stars"]
+position = Vector2( 26.2602, 131.092 )
+texture = ExtResource( 3 )
+
+[node name="star11" type="Sprite" parent="Stars"]
+position = Vector2( 38.2349, 187.814 )
+texture = ExtResource( 4 )
+
+[node name="star12" type="Sprite" parent="Stars"]
+position = Vector2( 47.0584, 187.814 )
+texture = ExtResource( 4 )
+
+[node name="star51" type="Sprite" parent="Stars"]
+position = Vector2( 147.268, 152.52 )
+texture = ExtResource( 4 )
+
+[node name="star52" type="Sprite" parent="Stars"]
+position = Vector2( 199.578, 98.9489 )
+texture = ExtResource( 4 )
+
+[node name="star13" type="Sprite" parent="Stars"]
+position = Vector2( 43.2769, 180.251 )
+texture = ExtResource( 4 )
+
+[node name="star14" type="Sprite" parent="Stars"]
+position = Vector2( 38.2349, 199.158 )
+texture = ExtResource( 4 )
+
+[node name="star15" type="Sprite" parent="Stars"]
+position = Vector2( 37.6047, 138.655 )
+texture = ExtResource( 4 )
+
+[node name="star16" type="Sprite" parent="Stars"]
+position = Vector2( 35.714, 122.898 )
+texture = ExtResource( 4 )
+
+[node name="star17" type="Sprite" parent="Stars"]
+position = Vector2( 21.8485, 119.117 )
+texture = ExtResource( 4 )
+
+[node name="star18" type="Sprite" parent="Stars"]
+position = Vector2( 39.4954, 265.965 )
+texture = ExtResource( 4 )
+
+[node name="star19" type="Sprite" parent="Stars"]
+position = Vector2( 39.4954, 265.965 )
+texture = ExtResource( 4 )
+
+[node name="star20" type="Sprite" parent="Stars"]
+position = Vector2( 54.6214, 284.242 )
+texture = ExtResource( 4 )
+
+[node name="star30" type="Sprite" parent="Stars"]
+position = Vector2( 218.106, 198.946 )
+texture = ExtResource( 4 )
+
+[node name="star59" type="Sprite" parent="Stars"]
+position = Vector2( 262.223, 113.862 )
+texture = ExtResource( 4 )
+
+[node name="star60" type="Sprite" parent="Stars"]
+position = Vector2( 262.223, 113.862 )
+texture = ExtResource( 4 )
+
+[node name="star53" type="Sprite" parent="Stars"]
+position = Vector2( 213.694, 291.592 )
+texture = ExtResource( 4 )
+
+[node name="star63" type="Sprite" parent="Stars"]
+position = Vector2( 320.837, 249.365 )
+texture = ExtResource( 4 )
+
+[node name="star64" type="Sprite" parent="Stars"]
+position = Vector2( 331.551, 236.76 )
+texture = ExtResource( 4 )
+
+[node name="star54" type="Sprite" parent="Stars"]
+position = Vector2( 137.434, 267.643 )
+texture = ExtResource( 4 )
+
+[node name="star55" type="Sprite" parent="Stars"]
+position = Vector2( 133.023, 193.904 )
+texture = ExtResource( 4 )
+
+[node name="star56" type="Sprite" parent="Stars"]
+position = Vector2( 133.023, 193.904 )
+texture = ExtResource( 4 )
+
+[node name="star57" type="Sprite" parent="Stars"]
+position = Vector2( 218.106, 250.626 )
+texture = ExtResource( 4 )
+
+[node name="star58" type="Sprite" parent="Stars"]
+position = Vector2( 218.106, 250.626 )
+texture = ExtResource( 4 )
+
+[node name="star31" type="Sprite" parent="Stars"]
+position = Vector2( 199.709, 201.454 )
+texture = ExtResource( 4 )
+
+[node name="star32" type="Sprite" parent="Stars"]
+position = Vector2( 202.636, 182.639 )
+texture = ExtResource( 4 )
+
+[node name="star33" type="Sprite" parent="Stars"]
+position = Vector2( 315.946, 162.987 )
+texture = ExtResource( 4 )
+
+[node name="star61" type="Sprite" parent="Stars"]
+position = Vector2( 312.165, 237.357 )
+texture = ExtResource( 4 )
+
+[node name="star62" type="Sprite" parent="Stars"]
+position = Vector2( 312.165, 237.357 )
+texture = ExtResource( 4 )
+
+[node name="star36" type="Sprite" parent="Stars"]
+position = Vector2( 329.181, 139.668 )
+texture = ExtResource( 4 )
+
+[node name="star37" type="Sprite" parent="Stars"]
+position = Vector2( 326.66, 61.5173 )
+texture = ExtResource( 4 )
+
+[node name="star38" type="Sprite" parent="Stars"]
+position = Vector2( 319.097, 51.4333 )
+texture = ExtResource( 4 )
+
+[node name="star39" type="Sprite" parent="Stars"]
+position = Vector2( 321.618, 39.4586 )
+texture = ExtResource( 4 )
+
+[node name="star40" type="Sprite" parent="Stars"]
+position = Vector2( 225.821, 42.6099 )
+texture = ExtResource( 4 )
+
+[node name="star44" type="Sprite" parent="Stars"]
+position = Vector2( 111.115, 47.0216 )
+texture = ExtResource( 4 )
+
+[node name="star45" type="Sprite" parent="Stars"]
+position = Vector2( 96.6197, 34.4166 )
+texture = ExtResource( 4 )
+
+[node name="star46" type="Sprite" parent="Stars"]
+position = Vector2( 68.8888, 45.1309 )
+texture = ExtResource( 4 )
+
+[node name="star47" type="Sprite" parent="Stars"]
+position = Vector2( 28.5529, 50.8031 )
+texture = ExtResource( 4 )
+
+[node name="star48" type="Sprite" parent="Stars"]
+position = Vector2( 26.6621, 84.2063 )
+texture = ExtResource( 4 )
+
+[node name="star49" type="Sprite" parent="Stars"]
+position = Vector2( 80.2332, 93.66 )
+texture = ExtResource( 4 )
+
+[node name="star50" type="Sprite" parent="Stars"]
+position = Vector2( 80.2332, 93.66 )
+texture = ExtResource( 4 )
+
+[node name="star41" type="Sprite" parent="Stars"]
+position = Vector2( 207.543, 39.4586 )
+texture = ExtResource( 4 )
+
+[node name="star42" type="Sprite" parent="Stars"]
+position = Vector2( 230.232, 30.6352 )
+texture = ExtResource( 4 )
+
+[node name="star43" type="Sprite" parent="Stars"]
+position = Vector2( 230.232, 30.6352 )
+texture = ExtResource( 4 )
+
+[node name="star34" type="Sprite" parent="Stars"]
+position = Vector2( 312.601, 147.935 )
+texture = ExtResource( 4 )
+
+[node name="star35" type="Sprite" parent="Stars"]
+position = Vector2( 312.601, 147.935 )
+texture = ExtResource( 4 )
+
+[node name="star29" type="Sprite" parent="Stars"]
+position = Vector2( 306.747, 315.183 )
+texture = ExtResource( 4 )
+
+[node name="star28" type="Sprite" parent="Stars"]
+position = Vector2( 280.824, 312.256 )
+texture = ExtResource( 4 )
+
+[node name="star26" type="Sprite" parent="Stars"]
+position = Vector2( 162.496, 330.653 )
+texture = ExtResource( 4 )
+
+[node name="star27" type="Sprite" parent="Stars"]
+position = Vector2( 162.496, 330.653 )
+texture = ExtResource( 4 )
+
+[node name="star25" type="Sprite" parent="Stars"]
+position = Vector2( 140.336, 325.218 )
+texture = ExtResource( 4 )
+
+[node name="star21" type="Sprite" parent="Stars"]
+position = Vector2( 34.4535, 296.217 )
+texture = ExtResource( 4 )
+
+[node name="star22" type="Sprite" parent="Stars"]
+position = Vector2( 34.4535, 296.217 )
+texture = ExtResource( 4 )
+
+[node name="star23" type="Sprite" parent="Stars"]
+position = Vector2( 118.976, 316.502 )
+texture = ExtResource( 4 )
+
+[node name="star24" type="Sprite" parent="Stars"]
+position = Vector2( 118.976, 316.502 )
+texture = ExtResource( 4 )
+
+[node name="star2" type="Sprite" parent="Stars"]
+position = Vector2( 35.714, 278.57 )
+texture = ExtResource( 3 )
+
+[node name="star6" type="Sprite" parent="Stars"]
+position = Vector2( 328.149, 47.8989 )
+texture = ExtResource( 3 )
+
+[node name="star7" type="Sprite" parent="Stars"]
+position = Vector2( 210.923, 185.923 )
+texture = ExtResource( 3 )
+
+[node name="star8" type="Sprite" parent="Stars"]
+position = Vector2( 94.9573, 44.7477 )
+texture = ExtResource( 3 )
+
+[node name="star9" type="Sprite" parent="Stars"]
+position = Vector2( 322.477, 152.52 )
+texture = ExtResource( 3 )
+
+[node name="star10" type="Sprite" parent="Stars"]
+position = Vector2( 217.225, 34.0334 )
+texture = ExtResource( 3 )
+
+[node name="star5" type="Sprite" parent="Stars"]
+position = Vector2( 122.688, 328.99 )
+texture = ExtResource( 3 )
+
+[node name="star3" type="Sprite" parent="Stars"]
+position = Vector2( 289.704, 323.317 )
+texture = ExtResource( 3 )
+
+[node name="star4" type="Sprite" parent="Stars"]
+position = Vector2( 289.704, 323.317 )
+texture = ExtResource( 3 )
+
+[node name="Player" parent="." instance=ExtResource( 5 )]
+_grid_position = Vector2( 6, 7 )
+
+[node name="MotherShip" type="Node2D" parent="." groups=[
+"MotherShip",
+]]
+editor/display_folded = true
+script = ExtResource( 6 )
+_grid_position = Vector2( 4, 4 )
+
+[node name="Sprite" type="Sprite" parent="MotherShip"]
+texture = ExtResource( 7 )
+
+[node name="Shooter" type="Node2D" parent="MotherShip"]
+script = ExtResource( 8 )
+
+[node name="TurnBack" type="Sprite" parent="."]
+modulate = Color( 1, 1, 1, 0.184314 )
+position = Vector2( 189.332, 166.156 )
+scale = Vector2( 19.8413, 16.5198 )
+texture = ExtResource( 9 )
+
+[node name="LabelMother" type="Label" parent="."]
+margin_left = 1.11172
+margin_top = 311.005
+margin_right = 352.112
+margin_bottom = 352.005
+custom_fonts/font = SubResource( 1 )
+align = 1
+valign = 2
+autowrap = true
+uppercase = true
+
+[node name="Label" type="Label" parent="."]
+margin_left = 43.39
+margin_top = 3.24215
+margin_right = 85.39
+margin_bottom = 33.2421
+custom_fonts/font = SubResource( 1 )
+text = " 100"
+valign = 1
+autowrap = true
+uppercase = true
+
+[node name="Actions" type="Label" parent="."]
+margin_left = 177.412
+margin_top = 1.30512
+margin_right = 194.412
+margin_bottom = 31.3051
+custom_fonts/font = SubResource( 1 )
+text = "3"
+align = 2
+valign = 1
+autowrap = true
+uppercase = true
+
+[node name="Who" type="Label" parent="."]
+margin_left = 219.0
+margin_right = 347.0
+margin_bottom = 32.0
+custom_fonts/font = SubResource( 1 )
+text = "Enemy turn"
+align = 2
+valign = 1
+uppercase = true
+
+[node name="Intro" type="Label" parent="."]
+margin_left = 40.6594
+margin_top = 78.2286
+margin_right = 313.66
+margin_bottom = 150.229
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 1, 0.984314, 0.0117647, 1 )
+text = "Protect the space fortress until reinforcements arrive."
+align = 1
+autowrap = true
+uppercase = true
+
+[node name="Start" type="Label" parent="."]
+margin_left = 43.7947
+margin_top = 226.682
+margin_right = 316.795
+margin_bottom = 262.682
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 1, 0.984314, 0.0117647, 1 )
+text = "Press Enter to start"
+align = 1
+autowrap = true
+uppercase = true
+
+[node name="End" type="Label" parent="."]
+margin_left = 38.4829
+margin_top = 53.6297
+margin_right = 311.483
+margin_bottom = 84.6297
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 1, 0.984314, 0.0117647, 1 )
+text = "Game Over"
+align = 1
+autowrap = true
+uppercase = true
+
+[node name="civil2" type="TextureRect" parent="."]
+margin_left = 12.7511
+margin_top = 8.73083
+margin_right = 50.7511
+margin_bottom = 40.7308
+rect_scale = Vector2( 0.7, 0.7 )
+texture = ExtResource( 11 )
+
+[node name="civil" type="TextureRect" parent="."]
+margin_left = 4.38871
+margin_top = 3.29528
+margin_right = 42.3887
+margin_bottom = 35.2953
+rect_scale = Vector2( 0.7, 0.7 )
+texture = ExtResource( 11 )
+
+[node name="civil3" type="TextureRect" parent="."]
+margin_left = 3.55248
+margin_top = 13.7483
+margin_right = 41.5525
+margin_bottom = 45.7483
+rect_scale = Vector2( 0.7, 0.7 )
+texture = ExtResource( 11 )
+
+[node name="TextureRect5" type="TextureRect" parent="."]
+margin_left = 20.6262
+margin_top = 0.593039
+margin_right = 58.6262
+margin_bottom = 32.593
+rect_scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 12 )
+
+[node name="TextureRect6" type="TextureRect" parent="."]
+margin_left = 19.9823
+margin_top = 17.5495
+margin_right = 57.9823
+margin_bottom = 49.5495
+rect_scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 12 )
+
+[node name="TextureRect7" type="TextureRect" parent="."]
+margin_left = 29.2117
+margin_top = 10.0371
+margin_right = 67.2117
+margin_bottom = 42.0371
+rect_scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 12 )
+
+[node name="TextureRect4" type="TextureRect" parent="."]
+margin_left = 182.523
+margin_top = -2.50939
+margin_right = 246.523
+margin_bottom = 61.4906
+rect_rotation = 90.0
+rect_scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 13 )
+
+[node name="Sound" type="AudioStreamPlayer2D" parent="."]
+volume_db = -40.0
+
+[node name="Music" type="AudioStreamPlayer2D" parent="."]
+volume_db = -10.0

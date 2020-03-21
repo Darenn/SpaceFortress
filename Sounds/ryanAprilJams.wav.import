@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/ryanAprilJams.wav-763b167bded4c190620b2b5b0c2e4171.sample"
+
+[deps]
+
+source_file="res://Sounds/ryanAprilJams.wav"
+dest_files=[ "res://.import/ryanAprilJams.wav-763b167bded4c190620b2b5b0c2e4171.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0
